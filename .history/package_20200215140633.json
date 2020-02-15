@@ -1,0 +1,28 @@
+{
+  "name": "possible-site",
+  "version": "1.0.0",
+  "description": "possible company site",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grzegorzgebala/possible-site.git"
+  },
+  "author": "Grzegorz Gebala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grzegorzgebala/possible-site/issues"
+  },
+  "homepage": "https://github.com/grzegorzgebala/possible-site#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "globstar": "^1.0.0",
+    "node-sass": "^4.13.1",
+    "nu-html-checker": "^0.1.0"
+  },
+  "dependencies": {
+    "autoprefixer-cli": "^1.0.0"
+  }
+}
