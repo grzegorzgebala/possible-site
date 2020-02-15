@@ -1,4 +1,4 @@
-const a = document.getElementById("1");
+const a = document.getElementById(document.;
 const big = document.getElementById("big");
 
 a.addEventListener('click', (click) => {

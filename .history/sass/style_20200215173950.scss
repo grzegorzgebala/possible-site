@@ -1,0 +1,16 @@
+// page style
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+// header style
+header {
+    background-image: url('/images/backgroundHeader.png');
+    display: flex;
+    justify-content: space-between;
+
+    .date {
+        color: white;    
+    }
+}
