@@ -55,12 +55,16 @@ header .date {
 
 .mainSite .leftSide {
   width: 100%;
+  max-width: 500px;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
-.mainSite .leftSide h1 {
-  font-family: "Proxima Nova";
+.mainSite .leftSide .welcome {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 29px;
+  font-weight: bold;
 }
 
 .mainSite .leftSide article {
@@ -77,7 +81,16 @@ header .date {
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
-  font-family: "Proxima Nova";
+  font-family: "Montserrat", sans-serif;
+}
+
+.mainSite .leftSide .descriptor {
+  background-color: black;
+  padding-left: 5px;
+}
+
+.mainSite .leftSide .descriptor div {
+  color: white;
 }
 
 .mainSite .leftSide .carousel {
@@ -91,18 +104,71 @@ header .date {
 }
 
 .mainSite .leftSide .carousel .miniatures {
-  overflow: hidden;
   background-image: url("/images/carouseleBackground.png");
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid black;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.mainSite .leftSide .carousel .miniatures .miniaturesContainer {
+  max-width: 500px;
+  overflow: hidden;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 20px 15px;
-  border: 2px solid black;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+}
+
+.mainSite .leftSide .carousel .miniatures .carouselTrack {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainSite .leftSide .carousel .miniatures .carouselTrack .carouselSlide {
+  margin: 0 4px;
+}
+
+.mainSite .leftSide .carousel .miniatures .carouselTrack .carouselSlide .carouselImage {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mainSite .leftSide .carousel .miniatures .pictureContainer {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 1;
+  background: black;
+  opacity: .3;
+}
+
+.mainSite .leftSide .carousel .miniatures .activeImg {
+  position: absolute;
+  z-index: 1;
+  width: 54px;
+  height: 54px;
+  border: 3px solid #1d9ed9;
+}
+
+.mainSite .leftSide .carousel .miniatures .arrow {
+  margin: 0 14px;
+  z-index: 1;
+}
+
+.mainSite .leftSide .carousel .miniatures button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .mainSite .rightSide {

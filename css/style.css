@@ -1,39 +1,206 @@
-.container { max-width: 1024px; margin: 0 auto; background-image: url("/images/mainBackground.png"); }
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-image: url("/images/mainBackground.png");
+}
 
-header { background-image: url("/images/backgroundHeader.png"); display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; padding: 30px 70px 13px 70px; }
+header {
+  background-image: url("/images/backgroundHeader.png");
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 70px 13px 70px;
+}
 
-header .date { color: #ffffff; line-height: 24px; font-family: "Arial"; }
+header .date {
+  color: #ffffff;
+  line-height: 24px;
+  font-family: "Arial";
+}
 
-.menu ul { max-width: 760px; margin: 5px auto; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; list-style-type: none; color: #ffffff; text-transform: uppercase; padding: 0; }
+.menu ul {
+  max-width: 760px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0;
+}
 
-.menu ul :hover { background-color: #000000; color: #1d9ed9; cursor: pointer; }
+.menu ul :hover {
+  background-color: #000000;
+  color: #1d9ed9;
+  cursor: pointer;
+}
 
-.menu ul li { padding: 10px 25px; }
+.menu ul li {
+  padding: 10px 25px;
+}
 
-.mainSite { max-width: 760px; margin: 0 auto; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-direction: row; flex-direction: row; }
+.mainSite {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 
-.mainSite .leftSide { width: 100%; background-color: #ffffff; padding: 20px; }
+.mainSite .leftSide {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
 
-.mainSite .leftSide h1 { font-family: "Proxima Nova"; }
+.mainSite .leftSide .welcome {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 29px;
+  font-weight: bold;
+}
 
-.mainSite .leftSide article { font-family: "Verdana"; font-size: 12px; line-height: 18px; color: #121212; margin-top: 25px; margin-bottom: 35px; }
+.mainSite .leftSide article {
+  font-family: "Verdana";
+  font-size: 12px;
+  line-height: 18px;
+  color: #121212;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
 
-.mainSite .leftSide .meetTitle { font-size: 15px; line-height: 24px; text-transform: uppercase; color: #000000; font-family: "Proxima Nova"; }
+.mainSite .leftSide .meetTitle {
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
 
-.mainSite .leftSide .carousel { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; border: 2px solid black; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
+.mainSite .leftSide .descriptor {
+  background-color: black;
+  padding-left: 5px;
+}
 
-.mainSite .leftSide .carousel .miniatures { overflow: hidden; background-image: url("/images/carouseleBackground.png"); display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; padding: 20px 15px; border: 2px solid black; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+.mainSite .leftSide .descriptor div {
+  color: white;
+}
 
-.mainSite .rightSide { background-color: #f2f2f2; width: 40%; padding-left: 20px; }
+.mainSite .leftSide .carousel {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
-.mainSite .rightSide .rightTitle { text-transform: uppercase; color: #1d9ed9; font-weight: bold; font-size: 14px; line-height: 18px; border-top: 3px solid #1d9ed9; width: 150px; margin-top: 80px; margin-bottom: 10px; padding-top: 5px; }
+.mainSite .leftSide .carousel .miniatures {
+  background-image: url("/images/carouseleBackground.png");
+  display: flex;
+  border: 2px solid black;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 
-.mainSite .rightSide p { color: #1d9ed9; }
+.mainSite .leftSide .carousel .miniatures .miniaturesContainer {
+  max-width: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
 
-footer { background: #000000; }
+.mainSite .leftSide .carousel .miniatures .carouselTrack {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
 
-footer ul { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; max-width: 760px; margin: 0 auto; list-style-type: none; color: #ffffff; background: #000000; padding: 10px; }
+.mainSite .leftSide .carousel .miniatures .carouselTrack .carouselSlide {
+  margin: 0 4px;
+}
 
-footer ul :hover { color: #1d9ed9; cursor: pointer; }
+.mainSite .leftSide .carousel .miniatures .carouselTrack .carouselSlide .carouselImage {
+  object-fit: cover;
+}
 
-footer ul li::first-letter { text-transform: uppercase; }
+.mainSite .leftSide .carousel .miniatures .pictureContainer {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 1;
+  background: black;
+  opacity: .3;
+}
+
+.mainSite .leftSide .carousel .miniatures .activeImg {
+  position: absolute;
+  z-index: 1;
+  width: 54px;
+  height: 54px;
+  border: 3px solid #1d9ed9;
+}
+
+.mainSite .leftSide .carousel .miniatures .arrow {
+  margin: 0 14px;
+  z-index: 1;
+}
+
+.mainSite .leftSide .carousel .miniatures button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.mainSite .rightSide {
+  background-color: #f2f2f2;
+  width: 40%;
+  padding-left: 20px;
+}
+
+.mainSite .rightSide .rightTitle {
+  text-transform: uppercase;
+  color: #1d9ed9;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  border-top: 3px solid #1d9ed9;
+  width: 150px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+
+.mainSite .rightSide p {
+  color: #1d9ed9;
+}
+
+footer {
+  background: #000000;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 760px;
+  margin: 0 auto;
+  list-style-type: none;
+  color: #ffffff;
+  background: #000000;
+  padding: 10px;
+}
+
+footer ul :hover {
+  color: #1d9ed9;
+  cursor: pointer;
+}
+
+footer ul li::first-letter {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */
