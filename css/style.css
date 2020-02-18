@@ -18,7 +18,6 @@ header {
 
 header .date {
   color: #ffffff;
-  line-height: 24px;
   font-family: "Arial";
 }
 
@@ -85,17 +84,24 @@ header .date {
 
 .mainSite .leftSide .descriptor {
   background-color: black;
-  padding-left: 5px;
   position: absolute;
-  width: 100%;
+  width: 473px;
+  padding: 0;
   margin-top: 230px;
+  height: 40px;
   visibility: hidden;
-  opacity: .5;
+  opacity: .8;
 }
 
 .mainSite .leftSide .descriptor .personalData {
+  position: relative;
   color: white;
-  opacity: 1;
+  padding-left: 18px;
+  font-size: 12px;
+}
+
+.mainSite .leftSide .descriptor .topData {
+  margin-top: 5px;
 }
 
 .mainSite .leftSide .carousel {
@@ -121,7 +127,7 @@ header .date {
 }
 
 .mainSite .leftSide .carousel .miniatures .miniaturesContainer {
-  max-width: 500px;
+  max-width: 384px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -132,10 +138,12 @@ header .date {
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
+  margin: 20px 0;
 }
 
 .mainSite .leftSide .carousel .miniatures .carouselTrack .carouselSlide {
-  margin: 0 4px;
+  margin: 0 2px;
+  height: 60px;
 }
 
 .mainSite .leftSide .carousel .miniatures .carouselTrack .carouselSlide .carouselImage {
@@ -143,19 +151,21 @@ header .date {
 }
 
 .mainSite .leftSide .carousel .miniatures .pictureContainer {
-  width: 60px;
-  height: 60px;
-  position: absolute;
+  height: 100%;
   z-index: 1;
   background: black;
-  opacity: .3;
+  opacity: .6;
 }
 
 .mainSite .leftSide .carousel .miniatures .activeImg {
-  position: absolute;
   z-index: 1;
-  width: 54px;
-  height: 54px;
+}
+
+.mainSite .leftSide .carousel .miniatures .activeImg img {
+  box-sizing: border-box;
+  object-fit: scale-down;
+  height: 60px;
+  width: 60px;
   border: 3px solid #1d9ed9;
 }
 
