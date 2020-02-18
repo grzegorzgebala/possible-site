@@ -20,6 +20,7 @@ const setSlidePosition = (slide, index) => {
 slides.forEach(setSlidePosition);
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
+    console.log(targetSlide);
     if (targetSlide != null) {
         track.style.transform = `translateX(-${targetSlide.style.left})`;
         currentSlide.classList.remove('currentSlide');
@@ -29,10 +30,11 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 
 // Hide and show arrows events
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+    console.log('slides, prevButton, nextButton, targetIndex', slides, prevButton, nextButton, targetIndex)
     if (targetIndex === 0) {
         prevButton.classList.add("isHidden");
         nextButton.classList.remove("isHidden");
-    } else if (targetIndex === slides.length - 5) {
+    } else if (targetIndex === slides.length - 1) {
         prevButton.classList.remove("isHidden");
         nextButton.classList.add("isHidden");
     } else {

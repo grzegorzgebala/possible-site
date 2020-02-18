@@ -32,7 +32,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
         prevButton.classList.add("isHidden");
         nextButton.classList.remove("isHidden");
-    } else if (targetIndex === slides.length - 5) {
+    } else if (targetIndex === slides.length - 6) {
         prevButton.classList.remove("isHidden");
         nextButton.classList.add("isHidden");
     } else {
