@@ -1,8 +1,8 @@
 body { width: 100%; margin: 0 auto; }
 
-.container { max-width: 1024px; margin: 0 auto; background-image: url("/images/mainBackground.png"); }
+.container { max-width: 1024px; margin: 0 auto; background-image: url("/possible-site/images/mainBackground.png"); }
 
-header { background-image: url("/images/backgroundHeader.png"); display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; padding: 30px 70px 13px 70px; }
+header { background-image: url("/possible-site/images/backgroundHeader.png"); display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; padding: 30px 70px 13px 70px; }
 
 header .date { color: #ffffff; font-family: "Arial"; }
 
@@ -32,7 +32,7 @@ header .date { color: #ffffff; font-family: "Arial"; }
 
 .mainSite .leftSide .carousel .big:hover + .descriptor { visibility: visible; transition: visibility 0s linear 0.33s, opacity 0.33s linear; }
 
-.mainSite .leftSide .carousel .miniatures { background-image: url("/images/carouseleBackground.png"); display: -ms-flexbox; display: flex; border: 2px solid black; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+.mainSite .leftSide .carousel .miniatures { background-image: url("/possible-site/images/carouseleBackground.png"); display: -ms-flexbox; display: flex; border: 2px solid black; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 
 .mainSite .leftSide .carousel .miniatures .miniaturesContainer { max-width: 384px; overflow: hidden; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; }
 
