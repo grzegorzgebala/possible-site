@@ -13,6 +13,10 @@ $contentDescriptionFont: "Verdana";
 $contentColor: #121212;
 
 // page style
+body {
+    width: 100%;
+    margin: 0 auto;
+}
 .container {
     max-width: 1024px;
     margin: 0 auto;
@@ -50,6 +54,7 @@ header {
         background-color: $menuHooverColor;
         color: $activeMenuColor;
         cursor: pointer;
+        transition: visibility 2s, opacity 0.5s linear;
     }
 
     li {
@@ -67,7 +72,7 @@ header {
     
     .leftSide {
         width: 100%;
-        max-width: 500px;
+        max-width: 520px;
         background-color: $leftSideBackgroundColor;
         padding: 40px 20px;
 
@@ -86,6 +91,7 @@ header {
             margin-top: 25px;
             margin-bottom: 35px;
         }
+
         .meetTitle {
             font-size: 15px;
             line-height: 24px;
@@ -97,19 +103,33 @@ header {
         .descriptor {
             background-color: black;
             padding-left: 5px;
+            position: absolute;
+            width: 100%;;
+            margin-top: 230px;
+            // display: none;
+            visibility: hidden;
+            opacity: .5;
 
-            div {
+            .personalData {
                 color: white;
+                opacity: 1;
             }
         }
 
         .carousel {
             display: flex;
+            max-width: 473px;
             flex-direction: column;
             border: 2px solid black;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
 
+            .big:hover + .descriptor {
+                // display: block;
+                visibility: visible;
+                transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+
+            }
             .miniatures {
                 // overflow: hidden;
                 background-image: url("/images/carouseleBackground.png");
@@ -179,6 +199,10 @@ header {
                     cursor: pointer;
                     outline: inherit;
                 }
+
+                .isHidden {
+                    visibility: hidden;
+                }
             }
         }
     }
@@ -186,8 +210,9 @@ header {
 
     .rightSide {
         background-color: $rightSideBackgroundColor;
-        width: 40%;
+        width: 100%;
         padding-left: 20px;
+        padding-top: 100px;
 
         .rightTitle {
             text-transform: uppercase;
@@ -197,7 +222,6 @@ header {
             line-height: 18px;
             border-top: 3px solid $sideMenuColor;
             width: 150px;
-            margin-top: 80px;
             margin-bottom: 10px;
             padding-top: 5px;
         }
