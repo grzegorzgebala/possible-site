@@ -6,7 +6,7 @@
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
     "globstar": "^1.0.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "nu-html-checker": "^0.1.0",
     "rimraf": "^2.6.2",
     "node-sass": "^4.9.0"
